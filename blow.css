@@ -1,0 +1,730 @@
+html{
+    font-size: 100%;
+}
+/*---------------------Whole Body---------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: '__Heebo_a9b4d4', '__Heebo_Fallback_a9b4d4', Helvetica, Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+
+/*----------------------1st Section-------------------------*/
+#sec1{
+    width: 100%;
+    height: fit-content;
+}
+
+.part1 {
+    width: 100%;
+    height: 56rem;
+    background: linear-gradient(180deg, #D8E5FF -40.28%, #5547FB 44.47%, #000584 100%);
+}
+
+/*++++++++++++++Nav-Bar+++++++++++*/
+.part1 nav {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+    position: relative;
+}
+
+.part1 nav img{
+    width: 7rem;
+    height: 100%;
+    margin-left: 0.5rem;
+}
+
+/*++++++++++++++Nav-Bar Drawer+++++++++++*/
+.drawer {
+    display: none;
+    width: 7rem;
+    height: 100%;
+    background: transparent;
+    border: none;
+    z-index: 100;
+}
+#check{
+    display: none;
+}
+.drawer i{
+    font-size: 2rem;
+    color: white;
+}
+.drawer_box{
+        display: none;
+        position: absolute;
+        height: 50rem;
+        width: 11rem;
+        right: -0.19rem;
+        top: 1px;
+        background: white;
+        z-index: 3;
+}
+.draw-btn{
+    margin-top: 6rem;
+    height: 50%;
+    width: 100%;
+}
+.draw_small_btn{
+    display: grid;
+    height: fit-content;
+    justify-items: start;
+}
+.draw_small_btn button{
+    width: 100%;
+    height: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+}
+.draw_large_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+
+/*++++++++++++++Nav-Bar  Buttons +++++++++++*/
+.des-btn {
+    width: 40%;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.des-btn div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.small_btn button {
+    width: 3rem;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.small_btn button:nth-child(1){
+    border-bottom: 2px solid white;
+}
+.small_btn button:hover{
+    border-bottom: 2px solid white;
+}
+
+.large_btn button, .draw_large_btn button, .part-body button {
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(45deg, #99f927, #51fecd);
+    width: 12rem;
+    height: 2.4rem;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+.large_btn button:hover, .draw_large_btn button:hover, .part-body button:hover{
+    opacity: 0.89;
+}
+
+/*++++++++++++++ Part Body +++++++++++*/
+.part-body{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 37rem;
+    justify-content: flex-end;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+.part-body img{
+    position: absolute;
+    width: 43rem;
+    left: 50%;
+    top: 0;
+    animation: 5s shipRun linear infinite alternate;
+}
+@keyframes shipRun {
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(-5px);
+    }
+    70%{
+        transform: translateY(-14px);
+    }
+    100%{
+        transform: translateY(-18px);
+    }
+}
+.part-body .text_part{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 3rem;
+    margin-top: 16rem;
+}
+.text_part h1{
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 1rem;
+    width: 16rem;
+}
+.text_part h3{
+    color: white;
+    margin-bottom: 0.7rem;
+}
+.part-body button{
+    width: 20rem;
+    height: 3.5rem;
+    font-size: larger;
+    margin-top: 3rem;
+    font-weight: 800;
+}
+
+/*---------------------Decoration---------------------------*/
+.decoration-p1{
+    width: 100%;
+    height: 56rem;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.bubble{
+    width: 100%;
+    position: absolute;
+    height: 15rem;
+    top: 44rem;
+}
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 19rem;
+    bottom: -0.5rem;
+}
+.yel-fi{
+    position: absolute;
+    top: 44rem;
+    left: 7rem;
+    height: 6rem;
+    animation: 1.2s fish ease-in-out 0.2s infinite alternate;
+}
+.ly-bl{
+    position: absolute;
+    top: 50rem;
+    left: -3rem;
+    animation: 1s lay ease-in-out 1s infinite alternate;
+}
+.ly-blgr{
+    position: absolute;
+    top: 43rem;
+    left: 7rem;
+    animation: 1s lay ease-in-out 1.2s infinite alternate;
+}
+.ly-blbg{
+    position: absolute;
+    top: 46rem;
+    left: 10rem;
+    animation: 1s lay ease-in-out 1.5s infinite alternate
+}
+.ly-blgrsm{
+    position: absolute;
+    top: 50rem;
+    left: 21rem;
+}
+.gr-fi{
+    position: absolute;
+    top: 39rem;
+    left: 30rem;
+    animation: 0.8s fish ease-in-out 1s infinite alternate;
+}
+
+@keyframes fish {
+    100% {
+        transform: translate(0, 10px) rotate(-8deg);
+        -webkit-transform: translate(10px, 20px) rotate(-8deg);
+    }
+}
+@keyframes lay {
+    100% {
+        transform: translate(0, 10px) rotate(-2deg);
+        -webkit-transform: translate(10px, 20px) rotate(-2deg);
+    }
+}
+
+
+
+/*----------------------2nd Section - Part1 -------------------------*/
+#sec2{
+    z-index: 2;
+    position: relative;
+    background: white;
+    width: 100%;
+    top: 0rem;
+    padding-top: 4rem;
+}
+.sec-pt-1{
+    width: 100%;
+    height: fit-content;
+    background: white;
+}
+.strip{
+    position: relative;
+    background: black;
+    margin: 2rem;
+    height: 6rem;
+    border-radius: 7rem;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    align-items: center;
+}
+.p1{
+    font-size: 3rem;
+    font-variant-caps: all-petite-caps;
+    padding-left: 2rem;
+    width: 21rem;
+    font-family: monospace;
+}
+.p2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(94.18deg, #A9F801 27.13%, #45FEE8 92.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -text-fill-color: transparent;
+}
+.coin{
+    height: 10rem;
+    position: absolute;
+    right: 8rem;
+    top: -5rem;
+}
+.coin-stack{
+    height: 20rem;
+    position: absolute;
+    right: -2rem;
+    top: -4rem;
+}
+
+/*----------------------2nd Section - Part2 -------------------------*/
+.sec-pt-2{
+    position: relative;
+    display: flex;
+}
+.sec-pt-2 .hole{
+    width: 20rem;
+    height: 45rem;
+    top: 1rem;
+    position: absolute;
+}
+.sec-pt-2 .bl-pf{
+    position: absolute;
+    top: 11rem;
+    width: 12rem;
+    left: 15rem;
+    animation: 1s linear 0s infinite alternate none running blpfmv;
+}
+@keyframes blpfmv {
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(-5px);
+    }
+    70%{
+        transform: translateY(-14px);
+    }
+    100%{
+        transform: translateY(-18px);
+    }
+}
+.cont{
+    margin-left: 28rem;
+    width: 100%;
+    z-index: 1;
+}
+.cont h1{
+    font-size: 3rem;
+    margin: 3rem 0 1rem 0;
+}
+.cont p{
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+}
+
+/*----------------------2nd Section - Part3 -------------------------*/
+.sec-pt-4{
+    position: relative;
+}
+.sec-pt-3 h1, .sec-pt-4 h1{
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.sec-pt-3 .cont{
+    width: 97%;
+    margin: 0;
+}
+.point{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.cont .txt{
+    width: 26rem;
+    height: 29rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cont .txt h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.pimg{
+    width: 28rem;
+    height: 28rem;
+}
+
+/*----------------------2nd Section - Part4 -------------------------*/
+.sec-pt-4 h1{
+    margin-top: 1rem;
+}
+.sec-pt-4 .star{
+    position: absolute;
+    right: 5rem;
+    width: 7rem;
+    top: 0;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.c1{
+    width: 30%;
+    height: 33rem;
+    margin-right: 4rem;
+    padding: 9px;
+    border: 2px solid transparent;
+}
+.c2{
+    width: 30%;
+    height: 33rem;
+    padding: 9px;
+    border: 2px solid transparent;
+}
+.c1:hover, .c2:hover{
+    border: 2px solid #8080801f;
+    border-radius: 17px;
+}
+.c1 img, .c2 img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.c-card{
+    position: relative;
+    top: -19rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 16rem;
+}
+#cc{
+    color: black;
+}
+.c-card h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.c-card p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0rem 2rem;
+    font-size: larger;
+    font-family: system-ui;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#pp{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.c-card button{
+    width: 17rem;
+    height: 3rem;
+    background: linear-gradient(90deg, #9ef91c, #4cfdd6);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 900;
+    font-size: inherit;
+    cursor: pointer;
+}
+.c-card button:hover{
+    opacity: 0.89;
+}
+.cming{
+    background: #6a59f6 !important;
+    color: white;
+}
+
+/*----------------------3rd Section- Paart1-------------------------*/
+#sec3{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin-top: 20rem;
+}
+.sec2-pt1{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-image: url("/Images/blue-wave.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 15rem;
+    background-position-y: 2rem;
+}
+.dec{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.dec img{
+    position: absolute;
+    cursor: pointer;
+}
+.dec .fl-sh{
+    width: 29rem;
+    top: -17rem;
+    left: 4rem;
+    animation: 5s shipRun linear infinite alternate;
+}
+.dec .bl-fi-le{
+    top: 11rem;
+    right: 3rem;
+    animation: 1s ease-in-out 0s infinite alternate none running fish;
+}
+.dec .gr-fi-le{
+    top: 25.5rem;
+    right: 0;
+    animation: 2s ease-in-out 0.4s infinite alternate none running fish;
+}
+.sec2-pt1 h1{
+    margin: 4rem 0;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+.list1, .list2{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.list1 img, .list2 img{
+    width: 11rem;
+    height: 4rem;
+    cursor: pointer;
+}
+.sec2-pt1 p{
+    margin: 2rem 1rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-align: center;
+    font-family: serif;
+    color: #333232;
+}
+
+/*----------------------3rd Section- Paart2-------------------------*/
+.sec2-pt2{
+    margin-top: 18rem;
+    width: 100%;
+    height: fit-content;
+}
+.sec2-pt2 h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+}
+.cards2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cd{
+    height: 24rem;
+    width: 22rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.cd:hover{
+    background: #FFFFFF;
+    box-shadow: 5px 7px 10px 2px rgba(35, 26, 91, 0.08);
+}
+.cd::marker
+.ob{
+    width: 100%;
+    height: 100%;
+}
+.cd iframe{
+    width: 100%;
+    height: 100%;
+}
+.card21{
+    overflow: hidden;
+}
+.card22 iframe{
+    cursor: pointer;
+}
+.card23{
+    overflow: hidden;
+}
+.cards2-heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards2-heading h2{
+    width: 21rem;
+    text-align: center;
+    color: #676464;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+
+/*----------------------3rd Section- Paart3-------------------------*/
+.sec2-pt3{
+    background-image: url(Images/bottom-wave.png);
+    width: 100%;
+    height: 54.5rem;
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.sec2-pt3 h1{
+    width: 100%;
+    text-align: center;
+    margin: 8rem 0 4rem 0;
+    font-size: 2.5rem;
+}
+.social-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.link{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+.social-links p{
+    font-size: 1.59rem;
+    padding-left: 0.5rem;
+    font-weight: 600;
+}
+.email{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.email input{
+    width: 22rem;
+    height: 2rem;
+    padding: 6px;
+    margin-bottom: 7px;
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.email button{
+    width: 23rem;
+    height: 3rem;
+    background: black;
+    color: white;
+    font-size: large;
+    border: navajowhite;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sec2-pt3 hr{
+    margin-top: 13rem;
+    border: 1px solid #80808038;
+}
+.p-last{
+    margin: 4rem !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: large;
+    color: #414040;
+}
+
+.deco{
+    position: relative;
+}
+.fish-bott{
+    position: absolute;
+}
+.yl-fi-bo{
+    top: -13rem;
+    left: 9rem;
+    rotate: 332deg;
+    animation: 2s ease-in-out 0.4s infinite alternate none running fish;
+}
+.gr-fi-bo{
+    top: -23rem;
+    rotate: 339deg;
+    right: 8rem;
+    animation: 1.2s fish ease-in-out 0.4s infinite alternate;
+}
+/*++++++++++++++=======+ Note +=======+++++++++++*/
+.note{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    height: 2rem;
+    background: #ff00005e;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+    z-index: 1;
+}
